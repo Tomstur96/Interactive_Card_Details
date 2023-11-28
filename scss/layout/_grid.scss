@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: stretch;
+  align-items: center;
+  position: relative;
+  padding-block-start: size(32);
+  padding-inline: size(16);
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/images/bg-main-desktop.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    grid-row-end: 6;
+  }
+}

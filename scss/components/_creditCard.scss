@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.creditCard {
+  &__front {
+    grid-column: 1 / 4;
+    grid-row: 3 / 7;
+
+    background-image: url("../../assets/images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 6px;
+    filter: drop-shadow(0px 39px 60px #00000024);
+  }
+
+  &__back {
+    grid-column: 2 / 5;
+    grid-row: 1 / 5;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url("../../assets/images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    border-radius: 6px;
+    height: 100%;
+    // width: 100%;
+  }
+}

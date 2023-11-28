@@ -22,3 +22,25 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+window.onload = function() {
+    var monthSelect = document.getElementById("CardMonth");
+    var months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+
+    for (var i = 0; i < months.length; i++) {
+        var option = document.createElement("option");
+        option.value = months[i];
+        option.text = months[i];
+        monthSelect.appendChild(option);
+    }
+
+    var yearSelect = document.getElementById("CardYear");
+    var currentYear = new Date().getFullYear();
+    
+    for (var j = 0; j < 10; j++) { // Adjust the range as needed
+        var yearOption = document.createElement("option");
+        yearOption.value = currentYear + j;
+        yearOption.text = currentYear + j;
+        yearSelect.appendChild(yearOption);
+    }
+};

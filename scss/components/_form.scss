@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+fieldset {
+  border: 0;
+}
+
+input {
+  font-family: $ff-base;
+  font-size: fs(200);
+  color: clr(neutral, 800);
+  letter-spacing: 2px;
+  text-indent: size(16);
+  padding-block: size(11);
+  border: 1px solid clr(neutral, 300);
+}
+
+.label {
+  font-family: $ff-base;
+  font-size: fs(50);
+  text-transform: uppercase;
+  color: clr(neutral, 800);
+  letter-spacing: 2px;
+}

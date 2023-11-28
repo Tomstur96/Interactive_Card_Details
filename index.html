@@ -1,16 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website-starter-template</title>
-  <link rel="stylesheet" href="/scss/main.scss">
-</head>
+  <body>
+    <div class="grid">
+      <div class="grid__bg"></div>
+      <div class="creditCard__front">
+        <img src="/assets/images/card-logo.svg" alt="credit card logo" />
+        <span class="creditCard__number" id="CC--num">0000 0000 0000 0000</span>
+        <div>
+          <h1 class="creditCard__name" id="CC--name">Jane Appleseed</h1>
+          <span class="creditCard__expiry" id="CC--exp">00/00</span>
+        </div>
+      </div>
+      <div class="creditCard__back">
+        <span class="creditCard__CVC" id="CC--CVC">000</span>
+      </div>
+    </div>
 
-<body>
-  <script type="module" src="/main.js"></script>
-</body>
+    <form action="#" method="post">
+      <fieldset>
+        <div class="container__input">
+          <label class="label" for="PersonName">Cardholder Name</label>
+          <input
+            type="text"
+            name="PersonName"
+            id="PersonName"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
 
+        <div class="container__input">
+          <label class="label" for="CardNumber">Cardholder Name</label>
+          <input type="number" name="CardNumber" id="CardNumber" />
+        </div>
+
+        <div class="container__input">
+          <div>
+            <label class="label" for="CardMonth">Exp. Month (MM)</label>
+            <select name="CardMonth" id="CardMonth"></select>
+            <select name="CardYear" id="CardYear"></select>
+          </div>
+
+          <div>
+            <label class="label" for="CardCVC">CVC</label>
+            <input type="number" name="CardCVC" id="CardCVC" />
+          </div>
+        </div>
+        <button class="button" type="submit">Confirm</button>
+      </fieldset>
+    </form>
+
+    <!-- Completed state start -->
+
+    Thank you! We've added your card details Continue
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

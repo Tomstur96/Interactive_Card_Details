@@ -1,17 +1,18 @@
-$ff-sans: "Lato", sans-serif;
-$ff-serif: "Abril Fatface", serif;
+$ff-sans: "'Space Grotesk'", sans-serif;
 
 $ff-base: $ff-sans;
-$ff-accent: $ff-serif;
 
 $font-sizes: (
-  900: clamp(2.5rem, 0.5rem + 10vw, 5rem),
-  800: clamp(2.5rem, 0.5rem + 7vw, 3.75rem),
-  600: clamp(1.5rem, 0.5rem + 3vw, 1.6875rem),
-  500: 1.3125rem,
-  400: 1.125rem,
-  300: 1rem,
+  900: clamp(2.7994rem, 2.4418rem + 1.5258vw, 3.815rem),
+  800: clamp(2.3325rem, 2.0792rem + 1.0808vw, 3.0519rem),
+  700: clamp(1.9438rem, 1.7686rem + 0.7474vw, 2.4413rem),
+  600: clamp(1.62rem, 1.5027rem + 0.5005vw, 1.9531rem),
+  500: clamp(1.35rem, 1.2752rem + 0.3192vw, 1.5625rem),
+  400: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem),
+  300: clamp(1.5rem, 0.5rem + 3vw, 1.6875rem),
+  200: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem),
+  100: clamp(0.9375rem, 0.9155rem + 0.0939vw, 1rem),
+  50: clamp(0.7813rem, 0.7746rem + 0.0282vw, 0.8rem),
 );
 
-$fw-400: 400;
-$fw-700: 700;
+$fw-500: 500;
